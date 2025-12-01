@@ -205,27 +205,49 @@ class SecondPage extends StatelessWidget {
                         ),
                       ),
                       SizedBox(width: 20),
-                      Column(children: [
-                        Text("724.9k", style: TextStyle(color: Colors.black)),
-                        Text("กำลังติดตาม", style: TextStyle(color: Colors
-                            .black)),
-                      ]),
+                      Column(
+                        children: [
+                          Text("724.9k", style: TextStyle(color: Colors.black)),
+                          Text(
+                            "กำลังติดตาม",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ],
+                      ),
                       SizedBox(width: 10),
-                      Container(width: 1.5,height: 40,color:  Colors.grey.shade50),
-                      SizedBox(width: 20),
-                      Column(children: [
-                        Text("9.8m", style: TextStyle(color: Colors.black)),
-                        Text("ผู้ติดตาม", style: TextStyle(color: Colors
-                            .black)),
-                      ]),
+                      Container(
+                        width: 1.5,
+                        height: 40,
+                        color: Colors.grey.shade50,
+                      ),
+                      SizedBox(width: 10,),
+                      Container(width: 1, height: 40, color: Colors.black,),
+                      SizedBox(width: 10,),
+                      Column(
+                        children: [
+                          Text("9.8m", style: TextStyle(color: Colors.black)),
+                          Text(
+                            "ผู้ติดตาม",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ],
+                      ),
                       SizedBox(width: 10),
-                      Container(width: 1.5,height: 40,color:  Colors.grey.shade50),
-                      SizedBox(width: 20),
-                      Column(children: [
-                        Text("23.4m", style: TextStyle(color: Colors.black)),
-                        Text("ถูกใจและบันทึก", style: TextStyle(color: Colors
-                            .black)),
-                      ]),
+                      Container(
+                        width: 1.5,
+                        height: 40,
+                        color: Colors.black,
+                      ),
+                      SizedBox(width: 10,),
+                      Column(
+                        children: [
+                          Text("23.4m", style: TextStyle(color: Colors.black)),
+                          Text(
+                            "ถูกใจและบันทึก",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                   SizedBox(width: 25, height: 25),
@@ -279,13 +301,20 @@ class SecondPage extends StatelessWidget {
                   SizedBox(width: 10),
                   ElevatedButton(
                     onPressed: () => Navigator.pushNamed(context, '/second'),
-                    child: Text("ติดตาม"),
+                    child: Text(
+                      "ติดตาม",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
                     style: ElevatedButton.styleFrom(
                       fixedSize: Size(300, 30),
                       backgroundColor: Colors.yellow,
                       foregroundColor: Colors.black,
                     ),
                   ),
+                  SizedBox(height: 10, width: 10),
                   Container(
                     child: Column(
                       children: [
@@ -317,12 +346,10 @@ class SecondPage extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-
